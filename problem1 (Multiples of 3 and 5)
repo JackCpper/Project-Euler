@@ -1,0 +1,24 @@
+#code by myself
+out=0
+for i in range(1000):
+    if (i%3==0)|(i%5==0):
+        out=out+i
+print(out)
+
+#code by contributor1
+x,y = [x for x in range(0, 1000, 3)], [y for y in range(0, 1000, 5)]
+xy = list(set(x + y))
+print(sum(xy))
+
+#code by contributor2
+threes = set( [x for x in range(1, 1000) if ((x % 3) == 0)] )
+fives  = set( [x for x in range(1, 1000) if ((x % 5) == 0)] )
+both = threes.union(fives)
+print(sum(both))
+
+#code by contributor3
+a=[]
+for b in range (1,1000):
+        if b%3==0 or b%5==0:
+            a.append (b)
+print sum(a) 
